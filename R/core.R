@@ -1,8 +1,4 @@
 #2021.01.27 
-
-library(pROC)
-
-
 mROC_class_template<-list(p=NA,FPs=NA,TPs=NA)
 class(mROC_class_template)<-"mROC"
 
@@ -351,7 +347,7 @@ mROC_inference<-function(y,p,n_sim=100000,CI=FALSE,aux=FALSE,fast=TRUE,condition
 
 
 
-#Main eRoc analysis: draws the ROC and eROC. inference=0: no inference, inference=1: p-value, inference=2: p-value and 95%CI
+# Main eRoc analysis: draws the ROC and eROC. inference=0: no inference, inference=1: p-value, inference=2: p-value and 95%CI
 #' @export
 mROC_analysis<-function(y,p,inference=0, n_sim, fast=TRUE)
 {

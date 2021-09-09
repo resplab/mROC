@@ -1,16 +1,17 @@
 Package: mROC
 Title: Model-based ROC (mROC) curves
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Anonymized",
-           family = "Per journal policy",
-           role = c("aut", "cre"),
-           email = "xxx@yyy.com",
-           comment = c(ORCID = "0000-0000-0000-0000"))
+Version: 0.0.1
+Authors@R: c(
+    person("Amin", "Adibi", email = "adibi@alumni.ubc.ca", role = c("aut", "cre")),
+    person("Mohsen", "Sadatsafavi", email = "mohsen.sadatsafavi@ubc.ca", role = c("aut", "cph")),
+    person("Abdollah", "Safari", email = "asafari@mail.ubc.ca", role = c("aut")))
 Description: This package provides function for mROC analyses.
-License: GPL
+Depends: R (>= 3.6.0)
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.0.2
-Imports: Rcpp (>= 1.0.3)
+Imports:
+    pROC,
+    Rcpp (>= 1.0.6)
+RoxygenNote: 7.1.1
 LinkingTo: Rcpp
